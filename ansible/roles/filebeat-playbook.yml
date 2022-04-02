@@ -1,0 +1,28 @@
+---
+- name: installing and launching filebeat
+  hosts: webservers
+  become: yes
+  tasks:
+
+  - name: download filebeat deb
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-darwin-x86_64.tar.gz
+
+  - name: install filebeat deb
+    command: tar xzvf filebeat-7.6.1-darwin-x86_64.tar.gz
+    command: cd filebeat-7.6.1-darwin-x86_64/
+    command: dpkg -i filebeat-7.6.1-darwin-x86_64
+
+  - name: drop in filebeat.yml
+    copy:
+      src: /etc/ansible/filebeat-config.yml
+      dest: /etc/filebeat/filebeat.yml
+  - name: enable and configure system module
+    command: filebeat modules enable system
+  - name: setup filebeat
+    command: filebeat setup
+  - name: start filebeat service
+    command: service filebeat start
+  - name: enable service filebeat on boot
+    systemd:
+      name: filebeat
+      enabled: yes
