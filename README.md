@@ -2,8 +2,9 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
+<img src="https://github.com/Ardavan-mo/scripts/blob/main/diagrams/Azure-Diagram.png"  width="1660" height="1045">
 
-![TODO: https://github.com/Ardavan-mo/scripts/tree/main/diagrams/Azure-Diagram.png
+https://github.com/Ardavan-mo/scripts/blob/main/diagrams/Azure-Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -254,4 +255,4 @@ hosts: ["10.0.0.12:9200"]
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 we should run this commend to download or update playbook file :
-curl https://github.com/Ardavan-mo/scripts/tree/main/ansible/ install-elk.yml
+curl https://github.com/Ardavan-mo/scripts/tree/main/ansible/install-elk.yml
