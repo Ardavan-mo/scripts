@@ -132,11 +132,18 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+  <h3>
+  
 10.0.0.4
+  
 10.0.0.5
+  
 10.0.0.6
+  
 10.0.0.7
+  
 10.1.0.4
+  </h3>
 
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
