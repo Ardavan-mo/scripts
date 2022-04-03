@@ -209,13 +209,13 @@ Answer: For METRICBEAT: created metricbeat-playbook.yml as the playbook.
 #List the IP Addresses of your webservers
 #You should have at least 2 IP addresses
 [webservers]
-10.0.0.4 ansible_python_interpreter=/usr/bin/python3
 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 #List the IP address of your ELK server
 #There should only be one IP address
 [elk]
-10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+10.2.0.4 ansible_python_interpreter=/usr/bin/python3
  ``` 
 </h3>  
   
@@ -231,7 +231,12 @@ Answer: For METRICBEAT: created metricbeat-playbook.yml as the playbook.
   ### How to Copy the raw Filebeat Module Configuration file from web
 
 ``` bash
-hosts: ["10.1.0.4:9200"]
+  setup.kibana:
+  host: "10.0.0.12:5601"
+  .
+  .
+  .
+hosts: ["10.0.0.12:9200"]
   username: "elastic"
   password: "changeme" 
 
@@ -239,6 +244,13 @@ hosts: ["10.1.0.4:9200"]
   
   
 - _Which URL do you navigate to in order to check that the ELK server is running?
+  
+  <h3>Test Kibana on web : _http://[your.ELK-VM.External.IP]:5601/app/kibana</h3>
+  
+  <h3> Test Kibana on localhost: _sysadmin@10.1.0.4: curl localhost:5601/app/kibana</h3>
+  
+  <img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/kibana.png"  width="1660" height="1045">
+  
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 we should run this commend to download or update playbook file :
