@@ -146,15 +146,18 @@ This ELK server is configured to monitor the following machines:
   </h3>
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
-We have installed Filebeat and Metricbeat on the following Systems: Web1, Web2, Web3, ELK.
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeats collects system type events such as logins to see who is actively logging into the system.
-See here for Filebeats Example
-Metricbeats collects useful information such as cpu usage and memory, this is particularly useful when seeing if there are any aberant programs or behaviors taking system resources
-See here for MetricBeats Example
+- _TODO: Specify which Beats you successfully installed 
 
+<h3>We have installed Filebeat and Metricbeat on the following Systems: Web-1, Web-2, Web-3, ardavan-ELK.</h3>
+These Beats allow us to collect the following information from each machine:
+- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+
+<h3>Filebeats collects system type events such as logins to see who is actively logging into the system.</h3>
+
+<h3>Metricbeats collects useful information such as cpu usage and memory, this is particularly useful when seeing if there are any aberant programs or behaviors taking system resources.
+
+Example</h3>
+<h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png">Example</a> </h3>
 
 
 
