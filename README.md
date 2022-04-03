@@ -2,7 +2,7 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-<img src="https://github.com/Ardavan-mo/scripts/blob/main/diagrams/Azure-Diagram.png"  width="1660" height="1045">
+<img src="https://github.com/Ardavan-mo/scripts/blob/main/diagrams/Azure-Diagram.png"  width="600" height="800">
 
 https://github.com/Ardavan-mo/scripts/blob/main/diagrams/Azure-Diagram.png
 
@@ -159,7 +159,7 @@ These Beats allow us to collect the following information from each machine:
 
 </h3>
 <h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png">Example</a> </h3>
-<img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png"  width="1660" height="1045">
+<img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png"  width="1200" height="800">
 
 
 
@@ -253,7 +253,7 @@ hosts: ["10.0.0.12:9200"]
   
   <h3> Test Kibana on localhost: _sysadmin@10.1.0.4: curl localhost:5601/app/kibana</h3>
   
-  <img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/kibana.png"  width="1660" height="1045">
+  <img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/kibana.png"  width="1200" height="800">
   
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
