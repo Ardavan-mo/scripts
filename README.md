@@ -49,13 +49,17 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 
 The configuration details of each machine may be found below.
+<h3>
 
-Name	Function	IP Address	Operating System
-Jump-Box	Gateway	10.0.0.4	Ubuntu
-Web-1	Web Server	10.0.0.5	Ubuntu
-Web-2	Web Server	10.0.0.6	Ubuntu
-Web-3	Web Server	10.0.0.7	Ubuntu
-Ardavan-ELK	ElasticSearch Stack	10.1.0.4	Ubuntu
+| Name       | Function            | IP Address | Operating System |
+|------------|---------------------|------------|------------------|
+| Jump Box   | Gateway             | 10.0.0.4   | Ubuntu           |
+| Web-1      | Web Server          | 10.0.0.5   | Ubuntu           |
+| Web-2      | Web Server          | 10.0.0.6   | Ubuntu           |
+| Web-3      | Web Server          | 10.0.0.7   | Ubuntu           |
+| Ardavan-ELK| ElasticSearch Stack | 10.1.0.4   | Ubuntu           |
+
+</h3>
 
 
 
@@ -65,23 +69,29 @@ Ardavan-ELK	ElasticSearch Stack	10.1.0.4	Ubuntu
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the   jump box   machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-PublicIP:  40.122.232.89
-•	
+
+<h3>Public IP:  40.122.232.89</h3>
+
 Machines within the network can only be accessed by jump box   
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
-•	PublicIP:  13.67.227.184
-•	PrivateIP: 10.0.0.4
+- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?
+
+<h3>Public IP:  13.67.227.184</h3>
+<h3>Private IP: 10.0.0.4</h3>
 
 
 
 A summary of the access policies in place can be found in the table below.
-Name	Publicly Accessible	Allowed IP Addresses
-Jump Box	SSH - 22 - Yes	13.67.227.184
-Web1,2,3	No	40.122.232.89
-LB	HTTP - 80 - Yes	*
-ELK	Kibana - 5601 - Yes	*
-ELK	HTTP API - 9200 - Yes	10.0.0.0/16
+<h3>
 
+| Name     | Publicly Accessible   | Allowed IP Addresses      |
+|----------|-----------------------|---------------------------|
+| Jump Box | SSH - 22 - Yes        | 13.67.227.184             |
+| Web-1,2,3| No                    | Web LB - 40.122.232.89    |
+| LB       | HTTP - 80 - Yes       | *                         |
+| ELK      | Kibana - 5601 - Yes   | *                         |
+| ELK      | HTTP API - 9200 - Yes | 10.0.0.0/16               |
+
+</h3>
 
 
 ### Elk Configuration
