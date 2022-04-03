@@ -106,10 +106,12 @@ The playbook implements the following tasks:
 <h3>
 Install Docker: 
   
-  Installs the core docker code to the remote server
+  Installs the core docker code to the remote server.
+  
 Install Python3_pip:
   
   Pip is an installation module that allows for additional docker modules to be installed easier
+
 Docker Module:
   
   Tells the previous PIP module to install the necessary docker component modules.
@@ -121,8 +123,11 @@ Increase Memory/Use More Memory:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
  
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
-https://github.com/Ardavan-mo/scripts/tree/main/ansible/images/docker-ps.png
+![TODO: Update the path with the name of your screenshot of docker ps output]
+
+<img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/docker-ps.png"  width="1460" height="245">
+                                                                                                                 
+
 
 
 ### Target Machines & Beats
