@@ -156,7 +156,7 @@ These Beats allow us to collect the following information from each machine:
 
 <h3>Metricbeats collects useful information such as cpu usage and memory, this is particularly useful when seeing if there are any aberant programs or behaviors taking system resources.
 
-Example</h3>
+</h3>
 <h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png">Example</a> </h3>
 
 
@@ -169,14 +169,19 @@ Example</h3>
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the  elk_install.yml   file to /etc/ansible/roles/ filebeat-7.4.0-amd64.yml
-Example: https://github.com/Ardavan-mo/scripts/tree/main/ansible/ install-elk.yml
-- Update the  hosts  file to include the attribute, such as elk
-Example : https://github.com/Ardavan-mo/scripts/tree/main/ansible/hosts.yml
+<h3>
+- Copy the  install-elk.yml   file to /etc/ansible/roles/filebeat-7.4.0-amd64.yml
+  
+<h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/install-elk.yml">Example</a> 
+  
+- Update the  hosts  file to include the attribute, such as elk </h3>
 
+ <h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/hosts.yml">Example</a> </h3>
+</h3>
 
-- Run the playbook, and navigate to  http://20.211.170.82:5601/app/kibana#/home to check that the installation worked as expected.
-Note: 20.211.170.82 that is my elk VM public Ip.  
+<h3>Run the playbook, and navigate to  http://20.211.170.82:5601/app/kibana#/home to check that the installation worked as expected.</h3>
+
+<h2>Note: 20.211.170.82 that is my elk VM public Ip.</h2>  
  
 
 _TODO: Answer the following questions to fill in the blanks:_
