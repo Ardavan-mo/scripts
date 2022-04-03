@@ -29,16 +29,20 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting  access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
-A jump box or bastion server serves as a gatway to gain entry into a remote network. Many times the primary mode of access is SSH and without the key access is forbidden
-A load balancer is meant to serve as a specific point of access for a service that is served by multiple machines. This allows high availability models to function properly
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+- 
+<h3>A jump box or bastion server serves as a gatway to gain entry into a remote network. Many times the primary mode of access is SSH and without the key access is forbidden.
+
+A load balancer is meant to serve as a specific point of access for a service that is served by multiple machines. This allows high availability models to function properly.</h3>
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
-- _TODO: What does Filebeat watch for?_ 
-Filebeat is meant primarily to watch for system logs and forward any changes to the Elasticsearch Host.
-.
-- _TODO: What does Metricbeat record?_
-Metricbeat is used only for gathering metrics and system resources usage for display in Elasticsearch
+- _TODO: What does Filebeat watch for?
+
+<h3>Filebeat is meant primarily to watch for system logs and forward any changes to the Elasticsearch Host.</h3>
+
+- _TODO: What does Metricbeat record?
+
+<h3>Metricbeat is used only for gathering metrics and system resources usage for display in Elasticsearch.</h3>
 
 
 
