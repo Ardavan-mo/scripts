@@ -201,7 +201,43 @@ Answer: For METRICBEAT: created metricbeat-playbook.yml as the playbook.
 <h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/metricbeat-playbook.yml">Open The File</a>
   </h3>
   
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+  <h3>
+
+### How to Edit the Ansible Hosts file in this directory /etc/ansible/hosts
+```bash
+#List the IP Addresses of your webservers
+#You should have at least 2 IP addresses
+[webservers]
+10.0.0.4 ansible_python_interpreter=/usr/bin/python3
+10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+#List the IP address of your ELK server
+#There should only be one IP address
+[elk]
+10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+ ``` 
+</h3>  
+  
+ ### How to Create the ELK Installation and VM Configuration in the /etc/ansible/ directory:
+
+```bash
+      - name: Config elk VM with Docker
+        hosts: elk
+        remote_user: sysadmin
+        become: true
+        tasks:
+```
+  ### How to Copy the raw Filebeat Module Configuration file from web
+
+``` bash
+hosts: ["10.1.0.4:9200"]
+  username: "elastic"
+  password: "changeme" 
+
+  ```
+  
+  
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
