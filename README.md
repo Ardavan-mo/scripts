@@ -159,6 +159,9 @@ These Beats allow us to collect the following information from each machine:
 
 </h3>
 <h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png">Example</a> </h3>
+<img src="https://github.com/Ardavan-mo/scripts/blob/main/ansible/images/cpu-usage.png"  width="1660" height="1045">
+
+
 
 
 
