@@ -185,7 +185,22 @@ SSH into the control node and follow the steps below:
  
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+
+Which file is the playbook? Where do you copy it?
+
+<h3>Answer : For the ANSIBLE : created the dvwa_playbook.yml as the playbook.
+
+<h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/dvwa_playbook.yml">Open The File</a>
+
+Answer : For FILEBEAT: created filebeat-playbook.yml as the playbook.
+
+<h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/filebeat-playbook.yml">Open The File</a>
+
+Answer: For METRICBEAT: created metricbeat-playbook.yml as the playbook.
+
+<h3><a href="https://github.com/Ardavan-mo/scripts/blob/main/ansible/metricbeat-playbook.yml">Open The File</a>
+  </h3>
+  
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
